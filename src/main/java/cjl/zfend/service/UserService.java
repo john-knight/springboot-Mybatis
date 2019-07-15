@@ -1,11 +1,7 @@
 package cjl.zfend.service;
-
-import cjl.zfend.dao.UserDao;
-import org.springframework.beans.factory.annotation.Autowired;
+import cjl.zfend.entity.User;
 import org.springframework.stereotype.Service;
-
 @Service
-public class UserService {
-    @Autowired
-    private UserDao userDao;
+public interface UserService {
+    public User selectUser(String name);
 }
